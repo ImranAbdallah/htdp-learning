@@ -11,3 +11,8 @@
 (expt 2 3)
 (sin 0)
 (cos pi)
+;; nested arithmetic in dr.racket
+(+ 2 (+ 3 5))
+(+ 2 3 5)
+(+ 2 (+ (* 3(/ 12 4)) 4))
+(+ (* 5 5) (+ (* 3 (/ 12 4)) 4))
