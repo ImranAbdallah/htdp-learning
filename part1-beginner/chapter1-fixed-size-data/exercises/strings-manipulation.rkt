@@ -1,0 +1,26 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname strings-manipulation) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+;; this is an intro into strings. "" double quotes are used to enclose a text in any sequence to make them a string.
+"hello world"
+; also dr racket can do arithmetic on strings such as
+(string-append "hello" "world")
+(string-append "hello " "world")
+; in order to see the phrase "hello world" its essential to add a space between the two words and include " " between the words: "hello" " " "world"
+(string-append "hello" " " "world")
+; to check the string length its simple as
+(string-length "hello world")
+; you can even have fun with strings and add them with a number to get a sum total
+(+ (string-length "hello world") 15)
+; to change a number into a string
+(number->string 25)
+; to change a string into a number its the reverse
+(string->number "25")
+; if you try to use string->number with a string thats not a number wrapped withing string quotes what happens? you get a #false.
+(string->number "hello world")
+; boolean: not a number nor is it a string. booleans are either #true or #false
+(and #true #true)
+(and #true #false)
+(or #true #false)
+(or #false #false)
+(not #false)
