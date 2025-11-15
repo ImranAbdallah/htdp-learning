@@ -24,4 +24,3 @@
 (string=? "design" "tinker")
 (string=? "tinker" "design")
 (string>? "amy" "zack")
-(string? "hello world")
