@@ -25,3 +25,4 @@
 (string=? "tinker" "design")
 (string>? "amy" "zack")
 (string? "hello world")
+(expt 4 5)
