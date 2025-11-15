@@ -24,3 +24,8 @@
 (or #true #false)
 (or #false #false)
 (not #false)
+; nested arithmetic with all the data we have learned so far
+(and (or (= (string-length "hello world")
+            (string->number "11"))
+         (string=? "hello world" "good morning"))
+     (>= (+ (string-length "hello world") 60) 80))
